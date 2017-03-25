@@ -8,6 +8,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
@@ -146,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
         startCameraInLayout(mPreviewLayout, mCameraId);
         rotation = getWindowManager().getDefaultDisplay().getRotation();
-        ;
+        Log.d("aziz", rotation + "");
         mCamPreview.setCameraDisplayOrientationAndSize(rotation);
     }
 
